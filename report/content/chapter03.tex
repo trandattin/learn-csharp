@@ -1,0 +1,62 @@
+\chapter{Tổng quan cấu trúc chương trình}
+\setlength{\epigraphwidth}{0.5\textwidth}
+
+\section{Khai báo lớp đối tượng Player}
+Lớp đối tượng này quản lý các thuộc tính liên quan đến thông tin của người chơi. Cụ thể:
+\begin{itemize}
+	\item \texttt{name:} lưu tên của người chơi thuộc kiểu \texttt{string}.
+	\item \texttt{mark:} lưu kí hiệu mà người chơi dùng thuộc kiểu \texttt{Image}.
+	\item \texttt{Avatar:} lưu hình đại diện của người chơi thuộc kiểu \texttt{Image}.
+\end{itemize}
+\section{Khai báo lớp đối tượng ChessBoardManager}
+Lớp đối tượng này quản lý các thuộc tính liên quan đến các tác vụ trên bàn cờ. Cụ thể:
+\begin{itemize}
+	\item \texttt{chessBoard:} lưu tên của người chơi thuộc kiểu \texttt{Panel}.
+	\item \texttt{player:} lưu trữ mảng tất cả các người chơi thuộc kiểu \texttt{Player}.
+	\item \texttt{currentPlayer:} lưu giá trị vị trí của người chơi hiện tại trong mảng \texttt{player}.
+	\item \texttt{playerName:} lưu trữ tên của người chơi hiển thị trên bảng thông tin thuộc kiểu \texttt{TextBox}.
+	\item \texttt{playerMark:} lưu trữ kí hiệu quân cờ của người chơi hiển thị trên bảng thông tin thuộc kiểu \texttt{PictureBox}
+	\item \texttt{playerAvatar:} lưu trữ ảnh đại diện của người chơi hiển thị trên bảng thông tin thuộc kiểu \texttt{PictureBox}.
+	\item \texttt{matrix:} là mảng hai chiều lưu các Button được dùng làm các ô trên bàn cờ.
+\end{itemize}
+
+Cùng với một số phương thức như:
+\begin{itemize}
+	\item \texttt{ChessBoardManager():} khởi tạo thuộc tính của đối tượng thành các giá trị mong muốn hoặc mang giá trị mặc định tại thời điểm tạo đối tượng.
+	\item \texttt{DrawChessBoard():} thực hiện việc vẽ bản cờ với phương pháp đã thảo luận ở \ref{sec:create-table}
+	\item \texttt{btn\_Click():} sự kiện sau khi thực hiện thao tác click chuột vào các Button của các người chơi
+	\item \texttt{Mark():} sẽ đổi hình ảnh của Button được truyền vào (tức là Button vừa được click) dựa theo \texttt{CurrentPlayer} tức là thứ tự của người chơi trong \texttt{List<Player>}.
+	\item \texttt{ChangePlayer():} thực hiện hiển thị các thông tin người chơi lên màn hình bào gồm: tên, kí hiệu quân cờ, hình đại diện.
+	\item \texttt{GetChessPoint():} trả về toạ độ trên thuộc tính \texttt{matrix}.
+	\item \texttt{isEndHorizontal():} kiểm tra chiến thắng theo chiều ngang.
+	\item \texttt{isEndVertical():} kiểm tra chiến thắng theo chiều dọc.
+	\item \texttt{isMainDiag():} kiểm tra chiến thắng theo đường chéo chính.
+	\item \texttt{isSubDiag():} kiểm tra chiến thắng theo đường chéo phụ.
+	\item \texttt{isEndGame():} trả về \texttt{True} khi một trong các kiểm tra chiến thắng trả về \texttt{True}.
+	\item \texttt{EndGame():} Thực hiện xuất lệnh thông báo thúc trò chơi khi một trong các kiểm tra chiến thắng trả về \texttt{True}.
+\end{itemize}
+
+\section{Khai báo lớp đối tượng Form1}
+
+Khi thực hiện việc thiết kế form trong C\#, thì Visual Studio sẽ tiến hành tách Form thành 2 file  ``Form1.cs'' xử lý nghiệp vụ, events…và ``Form1.Designer.cs'' thực hiện việc khai báo và thiết kế control. Trong class \texttt{Form1} ta có các thuộc tính
+\begin{itemize}
+	\item \texttt{ChessBoard:} là bàn cờ thuộc kiểu \texttt{ChessBoardManager}.
+	\item \texttt{pnlChessBoard}: là Panel của bàn cờ.
+	\item \texttt{panelLogo}: là Panel của Logo.
+	\item \texttt{panelInfo}: là Panel của khung thông tin người chơi.
+	\item \texttt{label5ltw}: là Label hiển thị dòng ``5 line to win'' trong chương trình.
+	\item \texttt{txbPlayerName}: là TextBox khung xuất hiển thị thông tin người chơi.
+	\item \texttt{pctbLogo}: là PictureBox hiển thị hình ảnh logo trò chơi.
+	\item \texttt{pctbMark}: là PictureBox hiển thị hình ảnh quân cờ.
+	\item \texttt{pctbAvt}: là PictureBox hiển thị hình ảnh đại diện người chơi.
+	\item \texttt{menuStrip}: là MenuStrip xây dựng Menu trên Form, cùng với các \texttt{ToolStripMenuItem} trên Menu.
+\end{itemize}
+
+Cùng với các phương thức sau:
+\begin{itemize}
+	\item \texttt{InitializeComponent():} dùng để khởi tạo các đối tượng có trên form như TextBox, PictureBox, Panel,...
+
+	\item \texttt{Dispose():} dùng để giải phóng các tài nguyên không được quản lý bất kì khi nào nó được gọi.
+	
+	\item \texttt{Form1():} phương thức khởi tạo trước tiên gọi \texttt{InitializeComponent()} sau đó truyền các thuộc tính trên Form cần thiết hiển thị trên bàn cờ vào \texttt{ChessBoard}, sau đó thực hiển vẽ bàn cờ qua hàm \texttt{NewGame()}
+\end{itemize}

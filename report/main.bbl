@@ -1,0 +1,30 @@
+\begin{thebibliography}{1}
+
+\bibitem{tuhocit}
+Cấu trúc dự án c\# - solution, project, file mã nguồn.
+\newblock \url{https://tuhocict.com/solution-project-source-namespace/}.
+\newblock Accessed: 2022-11-21.
+
+\bibitem{wikigomoku}
+Gomoku.
+\newblock \url{https://en.wikipedia.org/wiki/Gomoku}.
+\newblock Accessed: 2022-11-21.
+
+\bibitem{howkteam}
+Lập trình game caro với c\# winform.
+\newblock
+  \url{https://howkteam.vn/course/lap-trinh-game-caro-voi-c-winform-14}.
+\newblock Accessed: 2022-11-21.
+
+\bibitem{githubtrandattin}
+{Trần Đạt Tín - Mã nguồn trình bày trong tiểu luận 2022}.
+\newblock \url{https://github.com/trandattin/caro-csharp}.
+\newblock Accessed: 2022-03-25.
+
+\bibitem{tranduythanhreport}
+{\sc Thanh, T.~D.}
+\newblock Viết game tetris chạy trên giao diện dòng lệnh (console
+  user interface).
+\newblock {\em Trường Đại học Đà Lạt\/} (2022).
+
+\end{thebibliography}

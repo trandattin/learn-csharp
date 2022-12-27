@@ -1,0 +1,19 @@
+\contentsline {chapter}{Mở đầu}{1}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Tổng quan về trò chơi Caro}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Tên gọi}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Ý tưởng}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Ý tưởng giải thuật, các bài toán cốt lõi}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Visual Studio và Windows Form}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Giao diện đồ hoạ (Graphical User Interface - GUI)}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tổng quan về một project, trong Winform}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Cấu trúc file/thư mục của C\# project}{8}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Một số control trong Winform}{10}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Tạo bàn cờ}{10}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Xử lý đổi người chơi}{12}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Xử lý thắng thua}{13}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Tổng quan cấu trúc chương trình}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Khai báo lớp đối tượng Player}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Khai báo lớp đối tượng ChessBoardManager}{16}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Khai báo lớp đối tượng Form1}{18}{section.3.3}%
+\contentsline {chapter}{Kết luận}{20}{chapter*.3}%
+\contentsline {chapter}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{21}{chapter*.4}%

@@ -1,0 +1,97 @@
+\usepackage[utf8]{inputenc}
+\usepackage[utf8]{vietnam}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{hyperref}
+\usepackage{epigraph} % quotes after chapter
+\usepackage[top=2cm,right=2cm,bottom=2cm,left=3cm]{geometry}
+\usepackage{CJKutf8} %Japanese,chinese,korean
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{longfbox}
+\usepackage{csquotes} % quotes libary
+\usepackage{color, fancyhdr, graphicx, wrapfig}
+\usepackage[nottoc]{tocbibind}
+\usepackage{scrextend} % change font size
+\changefontsizes[14pt]{13.5pt}
+% Dãn dòng
+\renewcommand{\baselinestretch}{1.7}
+
+%theorem environment
+\usepackage[thmmarks]{ntheorem}
+
+%--------------------------------
+\makeatletter
+\renewtheoremstyle{plain}%
+{\item[\hskip\labelsep \theorem@headerfont ##1\ ##2 \theorem@separator]}%
+{\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\ (\normalfont\bf{##3})\theorem@separator]}
+\makeatother
+%------------------------------------
+
+\theoremseparator{.}
+\theorembodyfont{\normalfont} %not italic
+\newtheorem{dinhnghia}{Định nghĩa}[chapter]
+\newtheorem{dinhly}[dinhnghia]{Định lý}
+\newtheorem{bode}[dinhnghia]{Bổ đề}
+\newtheorem{hequa}[dinhnghia]{Hệ quả}
+\newtheorem{vidu}[dinhnghia]{Ví dụ}
+
+\theoremseparator{:}
+\newtheorem{truonghop}{\it Trường hợp}
+\theoremsymbol{\rule{1.3ex}{1.3ex}}
+\newtheorem*{chungminh}{\it Chứng minh}
+
+\newtheorem{collorary}{Collorary}[chapter] %neu muon danh so theo section thi thay chapter bang section
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{propos}{Proposition}[chapter]
+\newtheorem{remark}{Remark}[chapter]
+\newtheorem{step}{Bước}
+
+\theoremseparator{:}
+\newtheorem*{proof}{\it Chứng minh}
+\theorembodyfont{\normalfont} %not italic
+\theoremsymbol{}
+\newtheorem{bt}{Bài tập}
+\theoremstyle{break}
+\newtheorem*{solution}{\it Giải}
+
+% instead of \Big|
+\DeclareMathOperator*{\di}{\mathrm{d}\!}
+\def\at{
+  \left.
+    \vphantom{\int}
+    \right|
+    }
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
+
+%CODE
+
+\usepackage{color}
+\usepackage{xcolor}
+%code
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour}, commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  numbers=left,                    
+  numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+\lstset{style=mystyle}
